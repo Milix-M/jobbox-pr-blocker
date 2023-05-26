@@ -1,0 +1,20 @@
+{
+    "name": "PR Blocker for 求人ボックス",
+    "description": "求人ボックスの検索結果画面に表示されるPR求人を削除します。",
+    "version": "0.1",
+    "manifest_version": 3,
+    "icons": {
+        "48": "icon48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://xn--pckua2a7gp15o89zb.com/*"],
+            "js": [
+                "main.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ]
+}
