@@ -1,7 +1,7 @@
 window.addEventListener("load", deletePR, false);
 
 function deletePR() {
-    var elements = document.querySelectorAll('.p-result');
+    var elements = document.querySelectorAll('.p-result_card');
     for (var i = 0; i < elements.length; i++) {
         var className = elements[i].className;
         var matches = className.match(/p-ad-item\d{1,3}/);
